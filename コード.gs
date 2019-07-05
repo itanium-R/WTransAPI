@@ -1,5 +1,6 @@
 function doGet(e) {
   var p = e.parameter;
+  var translatedText,retranslatedText;
   translatedText   = LanguageApp.translate(p.text        , p.fromLang, p.toLang),
   retranslatedText = LanguageApp.translate(translatedText, p.toLang  , p.fromLang);
 
