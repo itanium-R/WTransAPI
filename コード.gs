@@ -5,8 +5,8 @@ function doGet(e) {
   retranslatedText = LanguageApp.translate(translatedText, p.toLang  , p.fromLang);
 
   var content={
-    "translatedText"   : translatedText,
-    "retranslatedText" : retranslatedText
+    translatedText   : translatedText,
+    retranslatedText : retranslatedText
   };
   
   var output = ContentService.createTextOutput();
